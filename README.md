@@ -73,8 +73,4 @@ the results.
 - Add YouTube Data API integration to pull comments directly from a video URL
 - Swap the lexicon approach for a pretrained transformer model for higher accuracy
 - Add emoji-aware sentiment scoring
-- Word cloud visualization of most common terms per sentiment class
-
-## License
-
-MIT — feel free to fork and build on this.
+- Word cloud visualization of most common terms per sentiment 

@@ -15,10 +15,10 @@ import re
 import pandas as pd
 import streamlit as st
 
-# ---------------------------------------------------------------------------
+
 # Sentiment engine (simple lexicon-based analyzer, no external API/model
 # downloads needed — works fully offline).
-# ---------------------------------------------------------------------------
+
 
 POSITIVE_WORDS = {
     "good", "great", "awesome", "amazing", "love", "loved", "excellent", "best",
@@ -75,9 +75,8 @@ def analyze_sentiment(text: str) -> dict:
     return {"label": label, "score": round(score, 3), "pos_hits": pos_hits, "neg_hits": neg_hits}
 
 
-# ---------------------------------------------------------------------------
 # Sample data (built in, so the app is demo-able instantly with no upload)
-# ---------------------------------------------------------------------------
+
 
 SAMPLE_COMMENTS = [
     "This video is amazing, I loved it so much! Thanks for sharing.",
@@ -98,9 +97,9 @@ SAMPLE_COMMENTS = [
 ]
 
 
-# ---------------------------------------------------------------------------
+
 # Streamlit UI
-# ---------------------------------------------------------------------------
+
 
 st.set_page_config(page_title="YouTube Sentiment Analyzer", layout="wide")
 
@@ -136,9 +135,9 @@ with tab2:
         col = "comment" if "comment" in df_upload.columns else df_upload.columns[0]
         comments = df_upload[col].astype(str).tolist()
 
-# ---------------------------------------------------------------------------
+
 # Results
-# ---------------------------------------------------------------------------
+
 
 if comments:
     results = []

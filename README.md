@@ -3,7 +3,7 @@
 A tool that classifies YouTube comments as Positive, Negative, or Neutral,
 and shows an overall sentiment breakdown for a video.
 
-**Live Demo:** _[add your deployed Streamlit link here after deployment]_
+**Live Demo:** https://sentiment-analyzer-youtube-93zxj8batcxmxvdzyqbtwg.streamlit.app/
 
 ## Problem
 
